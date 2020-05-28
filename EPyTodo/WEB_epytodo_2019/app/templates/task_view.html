@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task page</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/task_style.css') }}">
+    </head>
+    <body>
+        <div class="logout-button">
+            <button type="button" id="signout_button">Logout</button>
+        </div>
+        <header class="list-header">
+            <h1>{{"Welcome back, %s !" % greeting}}</h1>
+        </header>
+        <section class="list-section">
+            <div class="wrapper">
+                <div class="add-task">
+                    <table border="1">
+                        <tr>
+                            <td><input placeholder="New task" type="text" id="tk_title"></td>
+                            <td><input type="datetime-local" id="tk_begin"></td>
+                            <td><input type="datetime-local" id="tk_end"></td>
+                            <td>
+                                <select id="tk_status">
+                                    <option>not started</option>
+                                    <option>wip</option>
+                                    <option>done</option>
+                                </select>
+                            </td>
+                            <td><button type="button" id="add_button">Add</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="check-list">
+                <table border="1" id="check_list"></table>
+            </div>
+        </section>
+        <script src="{{ url_for('static', filename='logout.js') }}"></script>
+        <script src="{{ url_for('static', filename='task_view.js') }}"></script>
+    </body>
+</html>
