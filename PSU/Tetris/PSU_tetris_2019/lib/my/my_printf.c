@@ -32,7 +32,7 @@ void check_percent(char *str, va_list list, int k, int d)
         my_putchar((char)va_arg(list, int));
         break;
     case 's':
-        my_putstr(va_arg(list, char*));
+        my_putstr(va_arg(list, char *));
         break;
     case '%':
         my_putchar('%');
