@@ -1,0 +1,4 @@
+USAGE
+	./110borwein n
+DESCRIPTION
+	n	constant defining the integral to be computed

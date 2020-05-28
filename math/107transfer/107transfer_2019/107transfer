@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+##
+## EPITECH PROJECT, 2020
+## 107tranfer.py
+## File description:
+## 107transfer.py
+##
+
+import src.main as main
+
+if __name__ == "__main__":
+    main.main()
